@@ -152,7 +152,7 @@ const fazerCheckIn = (event) => {
 
   // encontrar o participante dentro da lista
   const participante = participantes.find(
-    (p) => p.email = event.target.dataset.email
+    (p) => p.email == event.target.dataset.email
   )
   // atualizar o check-in do participante
   participante.dataCheckIn = new Date()
